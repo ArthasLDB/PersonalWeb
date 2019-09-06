@@ -9,8 +9,8 @@
 <script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 <link rel="prefetch" href="https://v7.res.dandyweng.com/fonts/SourceHanSerifCN-SemiBold.woff2">
-<script src="https://v7.res.dandyweng.com/vendors.js" defer></script>
-<script src="https://v7.res.dandyweng.com/main.js" defer></script>
+<script type="text/javascript" src="js/vendor.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 
@@ -103,10 +103,7 @@
 </section>
 
 <section id="programming">
-	<p>我从小就对新科技有着无尽的好奇心，<br />因此一直在通过互联网自学编程。</p>
-
 	<div id="nodes" onscroll="node.didScroll()">
-		<img id="node-scroll-button" src="images/arrow.svg" onclick="node.increment()" />
 		<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="800">
 			<g stroke="#979797" fill="none">
 				<path d="M212 453l-81-88m81 88l47-88-77-55" />
@@ -305,10 +302,9 @@
 	</div>
 </section>
 
-
 <section id="markly" class="products">
 <div class="content">
-		<p>Cuphead BOSS战为主的横版卷轴类游戏</p>
+		<p>喜好魂系游戏：Cuphead</p>
 		<span>硬核魂Like</span>
 		<!--img src="https://v7.res.dandyweng.com/images/zh-Hans/pre-order-on-app-store.png" class="app-store-badge"-->
 	</div>
@@ -317,61 +313,49 @@
 	</div>
 </section>
 
+
 <section id="vary" class="products">
 	<div class="content">
-		<img id="vary-logo" src="https://v7.res.dandyweng.com/images/vary-logo.jpg" />
-		<p><br />Cuphead。</p>
-		<img src="images/cuphead.jpg" class="app-store-badge"></a>
+		<img id="vary-logo" src="" />
+		<p>御三家之一<br />NS-塞尔达</p>
+		<a href="http://www.rttswitch.com/" target="_blank" rel="external"><img src="images/switch_logo.jpg"></a>
 	</div>
 	<div class="showcase">
-		<img id="vary-showcase-c" src="https://v7.res.dandyweng.com/images/zh-Hans/vary-showcase-c@1x.png" srcset="https://v7.res.dandyweng.com/images/zh-Hans/vary-showcase-c@2x.png 2x" />
-		<img id="vary-showcase-b" src="https://v7.res.dandyweng.com/images/zh-Hans/vary-showcase-b@1x.png" srcset="https://v7.res.dandyweng.com/images/zh-Hans/vary-showcase-b@2x.png 2x" />
-		<img id="vary-showcase-a" src="https://v7.res.dandyweng.com/images/zh-Hans/vary-showcase-a@1x.png" srcset="https://v7.res.dandyweng.com/images/zh-Hans/vary-showcase-a@2x.png 2x" />
+		<img id="vary-showcase-c" src="images/sai1.jpg" srcset="images/sai1.jpg 2x" />
+		<img id="vary-showcase-b" src="images/sai2.jpg" srcset="images/sai2.jpg 2x" />
+		<img id="vary-showcase-a" src="images/sai3.jpg" srcset="images/sai3.jpg 2x" />
 	</div>
 </section>
+
 
 <section id="more">
 	<div class="container">
 		<div id="social-media" class="item">
 			<h2>社交网络</h2>
 			<div class="item-content">
-				<a class="tag" target="_blank" rel="external" href="https://github.com/dandyweng">Github</a>
-				
-				<a class="tag" target="_blank" rel="external" href="https://weibo.com/dandyweng">微博 </a>
-				
-				
+				<a class="tag" target="_blank" rel="external" href="https://github.com/ArthasLDB">Github</a>	
 			</div>
 		</div>
-		
 		<div id="mpwx" class="item">
 			<h2>微信</h2>
 			<div class="item-content">
 				<div>
-					<img src="https://v7.res.dandyweng.com/images/qr-mpwx-dw.jpg" />
+					<img src="images/lianxi1.JPG" />
 					<p>QQ</p>
 				</div>
 				<div>
-					<img src="https://v7.res.dandyweng.com/images/qr-mpwx-camarts.jpg" />
+					<img src="images/xianxi2.JPG" />
 				</div>
 			</div>
 		</div>
-		
-
-		
-		<div id="messages" class="item">
-			<h2>留言板</h2>
-			<div id="recent-messages" class="item-content"></div>
-			<a href="https://blog.dandyweng.com/messages/" target="_blank">查看更多留言 &rsaquo;</a>
-		</div>
-		
-
-		<div id="guestbook" class="item">
+	</div>
+	<div id="guestbook" class="item">
 			<h2>写新留言</h2>
 			<div class="item-content">
 				<div id="new-message">
 					<div id="step-1" class="inner-container">
 						<textarea id="message-content" placeholder="有什么想对我说的？畅所欲言吧" oninput="guestbook.contentDidChange(this)"></textarea>
-						<p>留言会公开显示，请勿在留言内容写下微信号等私人联系方式，谨防诈骗。如果你不想发布公开留言，也可以发送邮件到 <a href="mailto:dandyweng@dandyweng.com"></a> 与我联系。</p>
+						<p>留言会公开显示，请勿在留言内容写下微信号等私人联系方式，谨防诈骗。如果你不想发布公开留言，也可以发送邮件到 <a href="mailto:dandyweng@dandyweng.com">dandyweng@dandyweng.com</a> 与我联系。</p>
 						<button id="next-step-button" class="inactive" onclick="guestbook.next()">完成</button>
 					</div>
 					<div id="step-2" class="inner-container">
@@ -390,13 +374,16 @@
 						<button onclick="guestbook.post(this)">保存</button>
 					</div>
 					<div id="step-3" class="inner-container">
-						<
+						<h3>你的留言已经保存。</h3>
+						<p>为防止广告信息，所有留言都会在审核之后才会公开显示。</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 </section>
-<script  src = “canvas.js” > </script>
+
+
+<script type="text/javascript" src="js/canvas.js"></script>
+
 </body>
 </html> 

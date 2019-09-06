@@ -118,7 +118,7 @@ section .content p,
 .slice {
 	width: 100%;
 	height: 100%;
-	background-image: url("../images/background.png");
+	background-image: url("../images/fengjing1.jpg");
 	background-size: cover;
 	box-shadow: 0 20px 90px 0 rgba(0, 0, 0, .08), 0 9px 30px 0 rgba(0, 0, 0, .1);
 }
@@ -271,6 +271,47 @@ section .content p,
 	#node-scroll-button {
 		opacity: 0;
 	}
+}
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateX(0);
+	}
+	40% {
+		transform: translateX(-30px);
+	}
+	60% {
+		transform: translateX(-15px);
+	}
+}
+
+#design {
+	--padding: 1.25em;
+	min-height: 68vh;
+}
+#design p + p {
+	margin-top: 6em;
+}
+@media (max-width: 600px) {
+	#design p {
+		text-align: left;
+	}
+	#design br {
+		display: none;
+	}
+}
+
+.products .content {
+	width: 33.3%;
+	padding: 5vw;
+	padding-right: 0;
+	box-sizing: border-box;
+}
+.products .content p {
+	color: #fdfdfd;
+	text-align: left;
+}
+.products .content p + span {
+	font-size: 20px;
+	color: var(--color-background);
 }
 @keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {
